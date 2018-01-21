@@ -25,7 +25,7 @@ sudo -u postgres bash -c "psql -d webodm_dev -c \"CREATE EXTENSION postgis;\""
 sudo -u postgres bash -c "psql -d webodm_dev -c \"SET postgis.enable_outdb_rasters TO True;\""
 sudo -u postgres bash -c "psql -d webodm_dev -c \"SET postgis.gdal_enabled_drivers TO 'GTiff';\"" 
 
-# Add nginx
+# Add nginx (make sure to stop apache server if running)
 sudo apt-get install nginx -y
 
 # Setup nodejs
